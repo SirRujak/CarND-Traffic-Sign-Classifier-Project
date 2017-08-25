@@ -1,0 +1,5 @@
+model_checkpoint_path: "lenet-extended_standardized"
+all_model_checkpoint_paths: "lenet-base"
+all_model_checkpoint_paths: "lenet-extended"
+all_model_checkpoint_paths: "lenet-base_standardized"
+all_model_checkpoint_paths: "lenet-extended_standardized"
