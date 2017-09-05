@@ -22,7 +22,7 @@ The goals / steps of this project are the following:
 [image5]: ./new_signs/12_priority_road_sign.png "Traffic Sign 2"
 [image6]: ./new_signs/17_no_entry_sign.png "Traffic Sign 3"
 [image7]: ./new_signs/17_no_entry_sign_90_deg.png "Traffic Sign 4"
-[image8]: ./new_signs/21_double_curve.png "Traffic Sign 5"
+[image8]: ./new_signs/21_double_curve.jpg "Traffic Sign 5"
 [image9]: ./new_signs/28_children_crossing_sign.png "Traffic Sign 6"
 [image10]: ./new_signs/29_bicycle_crossing_sign.png "Traffic Sign 7"
 
@@ -100,17 +100,11 @@ LeNet was chosen as a basis due to the proven high accuracy on image based neura
 
 ### Test a Model on New Images
 
-####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
-
-Here are five German traffic signs that I found on the web:
+Here are seven German traffic signs that I found on the web:
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8] ![alt text][image9]
 ![alt text][image10]
-
-The first image might be difficult to classify because ...
-
-####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
 
