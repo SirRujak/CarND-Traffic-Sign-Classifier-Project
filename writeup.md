@@ -44,7 +44,7 @@ signs data set:
 * The size of training set is 34799
 * The size of the validation set is 4410
 * The size of test set is 12630
-* The shape of a traffic sign image is 32x32
+* The shape of a traffic sign image is 32x32x3
 * The number of unique classes/labels in the data set is 43
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data is distributed across the training set. As can be seen, the number of training examples for each category spans a range of less than two hundred to over two thousand.
@@ -125,77 +125,77 @@ The model was able to correctly guess 3 of the 7 traffic signs, which gives an a
 
 The code for making predictions on my final model is located in the 29th cell of the Ipython notebook.
 
-For the first image, the model is very sure that this is a beware of ice/snow sign (probability of 0.9985), instead the image contains a double curve sign. It is possible the mistake was made because the sign was covered in ice. The top five soft max probabilities were
+For the first image, the model is rather sure that this is a beware of ice/snow sign (probability of 0.061), instead the image contains a double curve sign. It is possible the mistake was made because the sign was covered in ice. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1         			| Beware of Ice/Snow   									| 
-| .00    				| Children Crossing 										|
-| .00				| Road Narrows on the Right							|
-| .00      			| Slippery Road					 				|
-| .00			    | Right-of-Way at the Next Intersection      							|
+| 0.061         			| Beware of Ice/Snow   									| 
+| 0.022    				| Children Crossing 										|
+| 0.022				| Road Narrows on the Right							|
+| 0.022      			| Slippery Road					 				|
+| 0.022			    | Right-of-Way at the Next Intersection      							|
 
 
-For the second image, the model is very sure that this is a no entry (probability of 1.00000), this is the case. The top five soft max probabilities were
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| 1         			| No Entry   									| 
-| .00    				| Go Straight or Right 										|
-| .00				| End of all Speed and Passing Limits							|
-| .00      			| 60 km/h					 				|
-| .00			    | 120 km/h      							|
-
-
-For the third image, the model is very sure that this is a speed limit 30 km/h sign (probability of 1.00000), this is the case. The top five soft max probabilities were
+For the second image, the model is rather sure that this is a no entry (probability of 0.061), this is the case. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1         			| 30 km/h  									| 
-| .00    				| 50 km/h										|
-| .00				| 120 km/h							|
-| .00      			| 80 km/h					 				|
-| .00			    | Bicycles Crossing      							|
+| 0.061         			| No Entry   									| 
+| 0.022    				| Go Straight or Right 										|
+| 0.022				| End of all Speed and Passing Limits							|
+| 0.022      			| 60 km/h					 				|
+| 0.022			    | 120 km/h      							|
 
-For the fourth image, the model is very sure that this is a 30 km/h sign (probability of 0.9974), instead the image contains a bicycle crossing sign. This could have been mistaken due to the unusual angle of this sign. The top five soft max probabilities were
 
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| 1         			| 30 km/h   									| 
-| .00    				| Right-of-Way at the Next Intersection 										|
-| .00				| General Caution							|
-| .00      			| 20 km/h					 				|
-| .00			    | End of Speed Limit 80 km/h      							|
-
-For the fifth image, the model is very sure that this is a road narrows to the right sign (probability of 1.00000), instead the image contains a children crossing sign. This could have been mistaken due to the unusual angle of this sign. The top five soft max probabilities were
+For the third image, the model is rather sure that this is a speed limit 30 km/h sign (probability of 0.061), this is the case. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1         			| Road Narrows to the Right   									| 
-| .00    				| Road Work 										|
-| .00				| Double Curve							|
-| .00      			| General Caution					 				|
-| .00			    | 80 km/h      							|
+| 0.061         			| 30 km/h  									| 
+| 0.022    				| 50 km/h										|
+| 0.022				| 120 km/h							|
+| 0.022      			| 80 km/h					 				|
+| 0.022			    | Bicycles Crossing      							|
 
-For the sixth image, the model is very sure that this is a priority road sign (probability of 1.00000), this is correct. The top five soft max probabilities were
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| 1         			| Priority Road   									| 
-| .00    				| Road Work 										|
-| .00				| End of No Passsing							|
-| .00      			| End of All Speed and Passing Limits					 				|
-| .00			    | Right-of-Way at the Next Intersection      							|
-
-For the seventh image, the model is very sure that this is a 60 km/h sign (probability of 0.9169), instead the image contains a no entry sign. This could have been mistaken due to the sign being at a 90 degree angle from the average sign of its type. The top five soft max probabilities were
+For the fourth image, the model is rather sure that this is a 30 km/h sign (probability of 0.061), instead the image contains a bicycle crossing sign. This could have been mistaken due to the unusual angle of this sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .92         			| 60 km/h   									| 
-| .06    				| 80 km/h 										|
-| .02				| 20 km/h							|
-| .00      			| Yield					 				|
-| .00			    | Children Crossing      							|
+| 0.061         			| 30 km/h   									| 
+| 0.022    				| Right-of-Way at the Next Intersection 										|
+| 0.022				| General Caution							|
+| 0.022      			| 20 km/h					 				|
+| 0.022			    | End of Speed Limit 80 km/h      							|
 
+For the fifth image, the model is rather sure that this is a road narrows to the right sign (probability of 0.061), instead the image contains a children crossing sign. This could have been mistaken due to the unusual angle of this sign. The top five soft max probabilities were
 
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.061         			| Road Narrows to the Right   									| 
+| 0.022    				| Road Work 										|
+| 0.022				| Double Curve							|
+| 0.022      			| General Caution					 				|
+| 0.022			    | 80 km/h      							|
+
+For the sixth image, the model is very sure that this is a priority road sign (probability of 0.061), this is correct. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.061         			| Priority Road   									| 
+| 0.022    				| Road Work 										|
+| 0.022				| End of No Passsing							|
+| 0.022      			| End of All Speed and Passing Limits					 				|
+| 0.022			    | Right-of-Way at the Next Intersection      							|
+
+For the seventh image, the model is very sure that this is a 60 km/h sign (probability of 0.054), instead the image contains a no entry sign. This could have been mistaken due to the sign being at a 90 degree angle from the average sign of its type. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.054         			| 60 km/h   									| 
+| 0.024    				| 80 km/h 										|
+| 0.023				| 20 km/h							|
+| 0.022      			| Yield					 				|
+| 0.022			    | Children Crossing      							|
+
+For the purpose of these values, "rather sure" indicates that it it over twice as confident in this answer as it is of any other.
 
